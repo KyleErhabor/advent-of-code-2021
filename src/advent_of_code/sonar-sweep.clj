@@ -1,6 +1,8 @@
 (ns advent-of-code.sonar-sweep
   (:require [clojure.string :as str]))
 
+;; Tonsky's solution is even cooler: https://github.com/tonsky/advent2021/blob/main/src/advent2021/day1.clj
+
 (defn nums []
   (map #(Long/parseLong %) (str/split-lines (slurp "resources/sonar-sweep.txt"))))
 
